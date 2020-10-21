@@ -74,9 +74,8 @@ class Controls extends StatelessWidget
                           angle: 3.14*90/180,
                           child: IconButton(
                               onPressed: (){
-                                Navigator.push(context, MaterialPageRoute(builder: (_)=> Scaffold(
-                                  body: Text("soja"),
-                                )));
+                                bloc.move();
+
                               },
                               iconSize:  MediaQuery.of(context).size.height*0.1,
                               icon: Icon(Icons.arrow_back,size: MediaQuery.of(context).size.height*0.1,color: Colors.white,))),
